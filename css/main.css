@@ -1,0 +1,98 @@
+
+/* remove white space at top of page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+}
+
+nav {
+    background-color: pink;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 10px 20px;
+    border: 1px solid red;
+  }
+  
+
+
+
+/* Hamburger Menu button to toggle menu display */
+.menu-button {
+    border: 3px solid black;
+    background: transparent;
+}
+  
+@media (min-width: 1500px) {
+    .menu-button {
+        display: none;
+    }
+}
+
+.menu-button.open span:first-child {
+transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-button.open span:nth-child(2) {
+display: none;
+}
+
+.menu-button.open span:nth-child(3) {
+transform: rotate(-45deg);
+}
+
+
+/* 'hamburger' bars */
+.menu-bar {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    transition: transform 0.2s;
+  }
+
+
+ /*   
+nav img {
+    padding: 10px;
+}  
+
+nav img:hover {
+    background-color: #333;
+}
+
+
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+
+
+@media (min-width: 480px){
+    nav img {
+        display: none;
+    }
+}
+
+*/
