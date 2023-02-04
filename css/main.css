@@ -9,9 +9,22 @@ header {
     width: 100%;
     height: 70px;
     background-color: #333;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
 }
 
-/* why is this width 100% */
+.menu-container {
+    border: 2px solid red;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 46px; 
+}
+
+/* don't think I need this anymore 
 nav {
     background-color: pink;
     display: flex;
@@ -20,7 +33,7 @@ nav {
     padding: 10px 20px;
     border: 1px solid red;
   }
-  
+*/ 
 
 /* Hamburger Menu button to toggle menu display */
 .menu-button {
