@@ -20,6 +20,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     height: 46px; 
+    border: 2px solid green;
 }
 
 /* Hamburger Menu button to toggle menu display */
@@ -83,24 +84,26 @@ header {
 
 }
 
-/* only display slide in meny for mobile */ 
+/* only display slide in meny for mobile 
 @media (min-width: 1500px) {
     .menu-container {
         display: none;
     }
 }
+*/ 
 
 nav ul {
     /* remove default list styles */ 
     list-style: none;
     padding: 0;
+    margin: 0;
 
     /* orientation of labels */
     display: flex;
     flex-direction: column;
     text-align: center;
     
-    border: 2px solid grey;
+    border: 2px solid purple;
 }
 
  
@@ -110,12 +113,37 @@ nav li {
 }
 
 
-  nav a {
+nav a {
     color: red;
     text-decoration: none;
     font-size: 56px;
     border: 2px solid black;
-  }
+}
+
+/* display menu items in header for anything bigger than mobile */
+@media (min-width: 1500px) {
+
+
+    .menu {
+        position: unset;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size: 32px;
+    }
+}
 
 
 
