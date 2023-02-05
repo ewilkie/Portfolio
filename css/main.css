@@ -16,24 +16,11 @@ header {
 }
 
 .menu-container {
-    border: 2px solid red;
-
     display: flex;
     align-items: center;
     padding: 10px 20px;
     height: 46px; 
 }
-
-/* don't think I need this anymore 
-nav {
-    background-color: pink;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    padding: 10px 20px;
-    border: 1px solid red;
-  }
-*/ 
 
 /* Hamburger Menu button to toggle menu display */
 .menu-button {
@@ -42,13 +29,14 @@ nav {
 }
   
 /* change this to 480 once finished */
+/* don't display hamburger when not mobile */
 @media (min-width: 1500px) {
     .menu-button {
         display: none;
     }
 }
 
-/* to generate the X with JS */
+/* to generate the X with JS on click */
 .menu-button.open span:first-child {
     transform: rotate(45deg) translate(8px, 8px);
 }
@@ -73,63 +61,64 @@ nav {
     transition: transform 0.2s;
 }
 
+/* slide in menu for mobile */
 .menu {
     position: fixed;
+    /* start below header so no overlap */
     top: 70px;
+    /* out of view */
     right: -100%;
-    background-color: yellow;
+    /* padding and margins included in total height and width */
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 0 20px 20px 20px;
+    background-color: yellow;
     transition: right 0.5s ease-in-out;
 }
-  
+ 
+/* class added in js to display */
 .menu.open {
     right: 0;
+
 }
 
+/* only display slide in meny for mobile */ 
 @media (min-width: 1500px) {
     .menu-container {
         display: none;
     }
 }
 
+nav ul {
+    /* remove default list styles */ 
+    list-style: none;
+    padding: 0;
 
- /*   
-nav img {
-    padding: 10px;
-}  
-
-nav img:hover {
-    background-color: #333;
+    /* orientation of labels */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border: 2px solid grey;
 }
 
-
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
+ 
+nav li {
+    /* margin: 0 10px; */
+    border: 2px solid red;
+}
 
 
   nav a {
-    color: #fff;
+    color: red;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 56px;
+    border: 2px solid black;
   }
 
 
 
-@media (min-width: 480px){
-    nav img {
-        display: none;
-    }
-}
 
-*/
+
+
