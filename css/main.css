@@ -229,6 +229,9 @@ nav a {
     min-height: calc(100vh - 70px);
 }
 
+.contact {
+    min-height: calc(100vh - 70px);
+}
 
 footer {
     margin: 0 auto;
