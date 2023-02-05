@@ -1,8 +1,9 @@
 
 /* remove white space at top of page */
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 header {
@@ -185,6 +186,12 @@ nav a {
 }
 
 
+.section {
+    height: 100vh; /* Make the section height equal to the full viewport height */
+    
+  }
+
+
 .main-container {
     margin: 0 auto;
     width: 100vw;
@@ -197,11 +204,21 @@ nav a {
     /* minus header height */
     min-height: calc(100vh - 70px);
     height: calc(100vh - 70px);
-    border: 2px solid aquamarine;
+    
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     
+}
+
+.about {
+    min-height: calc(100vh - 70px);
+
     
+}
+
+.projects {
+    min-height: calc(100vh - 70px);
 }
