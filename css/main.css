@@ -17,24 +17,18 @@ header {
 
 .menu-container {
     display: flex;
-    align-items: center;
-    padding: 10px 20px;
+    align-items: center; 
+    margin-right: 30px;
+    /*padding: 10px 20px; 
     height: 46px; 
-    border: 2px solid green;
+    border: 2px solid green; */
+    
 }
 
 /* Hamburger Menu button to toggle menu display */
 .menu-button {
     background: transparent;
     cursor: pointer;
-}
-  
-/* change this to 480 once finished */
-/* don't display hamburger when not mobile */
-@media (min-width: 1500px) {
-    .menu-button {
-        display: none;
-    }
 }
 
 /* to generate the X with JS on click */
@@ -60,7 +54,10 @@ header {
     border-radius: 2px;
     margin-bottom: 7px;
     transition: transform 0.2s;
+    
 }
+
+
 
 /* slide in menu for mobile */
 .menu {
@@ -73,43 +70,39 @@ header {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    padding: 0 20px 20px 20px;
-    background-color: yellow;
+    padding: 20px;
+    background-color: lightblue;
     transition: right 0.5s ease-in-out;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
  
 /* class added in js to display */
 .menu.open {
     right: 0;
-
 }
-
-/* only display slide in meny for mobile 
-@media (min-width: 1500px) {
-    .menu-container {
-        display: none;
-    }
-}
-*/ 
 
 nav ul {
     /* remove default list styles */ 
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin-bottom: 0px;
 
     /* orientation of labels */
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     
-    border: 2px solid purple;
+
+    /* border: 2px solid magenta; */
 }
 
  
 nav li {
-    /* margin: 0 10px; */
-    border: 2px solid red;
+    margin: 10px;
+    /* border: 2px solid red; */
 }
 
 
@@ -117,36 +110,98 @@ nav a {
     color: red;
     text-decoration: none;
     font-size: 56px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
+/* need to fix the styling for hover*/
+.menu-link:hover,
+.menu-link:focus {
+  background-color: #eee;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+@media (min-width: 600px) {
+  .menu-link:hover,
+  .menu-link:focus {
+    background-color: unset;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid white;
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.active:hover {
+  cursor: default;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  background-color: unset;
+}
+
+
+
+
 /* display menu items in header for anything bigger than mobile */
-@media (min-width: 1500px) {
+@media (min-width: 600px) {
 
+    /* don't display hamburger when not mobile */
+    .menu-button {
+        display: none;
+    }
 
+    /* reset position to be placed in header not in slide-out menu */
     .menu {
         position: unset;
         background-color: transparent;
+        padding: 0px;
+        
     }
 
     nav ul {
-        display: flex;
+        display: flex;       
         flex-direction: row;
         align-items: center;
+        margin: 0; 
         
     }
 
     nav li {
         margin-right: 20px;
+        
+    }
+
+    nav li:last-child {
+        margin: 0px;
+        
     }
 
     nav a {
         font-size: 32px;
+        
     }
 }
 
 
+.main-container {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1200px;
+    background-color: aquamarine;
+}
 
 
+.main-hero {
+    /* minus header height */
+    min-height: calc(100vh - 70px);
+    height: calc(100vh - 70px);
+    border: 2px solid aquamarine;
 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
