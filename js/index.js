@@ -53,8 +53,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 document.querySelector('#github').addEventListener("click", function() {
     window.open("https://github.com/ewilkie", "_blank");
-  });
+});
 
-  document.querySelector('#linkedin').addEventListener("click", function() {
+document.querySelector('#linkedin').addEventListener("click", function() {
     window.open("https://www.linkedin.com/in/emilie-wilkie/", "_blank");
-  });
+});

@@ -10,16 +10,17 @@ html, body {
 
 h1 {
     font-size: 25px !important;
-    border: 2px solid red;
     color: lightgray;
 }
 
 h2 {
     font-size: 7vh;
-
     color:#293C6D;
-    border: 2px solid red;
     margin: 0;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 header {
@@ -260,8 +261,40 @@ section {
   }
 
 
+.about {
+    border: 2px solid red;   
+}
 
 
+.about-img{
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid black;
+    opacity: 0.6;
+}
+
+.about img {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    border-radius: 10px;
+    
+  }
+
+.about-img:hover {
+    box-shadow: 0 0 10px black;
+    opacity: 1;
+}
+  
+.about-text {
+    border: 2px solid green;
+    margin: 30px;
+}
+
+.about-text p {
+    font-size: 20px;
+}
 
 /*
 .about {
