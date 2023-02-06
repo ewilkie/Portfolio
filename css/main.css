@@ -21,25 +21,13 @@ header {
     align-items: center;
 }
 
-.menu-outer {
-    border: 2px solid green;
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
 .menu-container {
-    /*
+    
     display: flex;
     align-items: center; 
     margin-right: 30px;
     padding: 10px 20px; 
-    height: 46px; 
-    border: 2px solid green; */
-    border: 2px solid blue;
-
-    
+    height: 50px; 
 }
 
 /* Hamburger Menu button to toggle menu display */
