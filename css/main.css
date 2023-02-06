@@ -15,7 +15,8 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 7vh;
+
     color:#293C6D;
     border: 2px solid red;
     margin: 0;
@@ -260,7 +261,7 @@ section {
 
 
 
-  
+
 
 /*
 .about {
