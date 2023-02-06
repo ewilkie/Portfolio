@@ -15,23 +15,26 @@ toggleMenuBtn.addEventListener('click', toggleMenu);
 // mobile menu functionality for navigating to different sections 
 let menuLinks = document.querySelectorAll('.menu-link');
 
-if (window.innerWidth <= 600) {
+
     for (let i = 0; i < menuLinks.length; i++) {
-        menuLinks[i].addEventListener('click', function(event) {
-    
-    // delay only applies to mobile menu
-    /* if (window.innerWidth <= 600) {
         
-        event.preventDefault();
-        setTimeout(function() {
-        window.location.href = menuLinks[i].getAttribute("href");
-        }, 500);
-    */    
-        toggleMenuBtn.classList.toggle('open');
-        menu.classList.toggle('open'); 
-    
+         menuLinks[i].addEventListener('click', function(event) {
+        
+            if (window.innerWidth <= 600) {
+        // delay only applies to mobile menu
+        
+            /*
+            event.preventDefault();
+            setTimeout(function() {
+            window.location.href = menuLinks[i].getAttribute("href");
+            }, 500);
+            */
+            toggleMenuBtn.classList.toggle('open');
+            menu.classList.toggle('open'); 
+        }
+        
         });
-    }
+    
 }
 
 
@@ -44,3 +47,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
