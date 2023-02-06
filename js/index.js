@@ -32,7 +32,7 @@ let menuLinks = document.querySelectorAll('.menu-link');
             toggleMenuBtn.classList.toggle('open');
             menu.classList.toggle('open'); 
         }
-        
+
         });
     
 }
@@ -48,4 +48,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+// add event click for resume 
