@@ -58,3 +58,4 @@ document.querySelector('#github').addEventListener("click", function() {
 document.querySelector('#linkedin').addEventListener("click", function() {
     window.open("https://www.linkedin.com/in/emilie-wilkie/", "_blank");
 });
+

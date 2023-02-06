@@ -216,6 +216,13 @@ section {
     /* height: 100vh; /* Make the section height equal to the full viewport height */
     min-height: 100vh;
     margin: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
   }
 
 
@@ -295,6 +302,37 @@ section {
 .about-text p {
     font-size: 20px;
 }
+
+
+
+.projects-indiv {
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.projects-button-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.projects-button {
+    cursor: pointer;
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.projects-button:hover {
+    background-color: red;
+}
+
+.projects-button:first-child{
+    margin-right: 10px;
+}
+
 
 /*
 .about {
