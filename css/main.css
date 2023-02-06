@@ -30,7 +30,7 @@ header {
     
     /* to have header box shadow displayed above main */ 
     box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.75);
-    z-index:100;
+    z-index: 100;
     position: relative;
     
     display: flex;
@@ -219,7 +219,7 @@ section {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: center;
 
     
@@ -351,11 +351,16 @@ section {
 */
 
 footer {
-    margin: 0 auto;
-    width: 100vw;
-    max-width: 1200px;
+    width: 100%;
 
     display: flex;
     justify-content: center;
-    border: 2px solid red; 
+
+
+    background-color: #7a7878;  
+    color: lightgray;  
+
+    box-shadow: 0px -15px 20px 0px rgba(0,0,0,0.75);
+    z-index: 110;
+    position: relative;
 }
