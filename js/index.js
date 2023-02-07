@@ -48,6 +48,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+/* need to add css show property to get this to work 
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function() {
+  const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
+  if (scrollPosition >= 100) {
+    header.classList.add("show");
+  } else {
+    header.classList.remove("show");
+  }
+});
+*/
+
 // Event clicks for redirects
 
 // add event click for resume 
