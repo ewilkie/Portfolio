@@ -43,18 +43,22 @@
           </section>
           <section class="about" id="about">
             <h3> About Me</h3>
-            <div class="about-img">
-              <img src="/images/about-me.png" alt="Profile picture">
-            </div>
             <div class="about-text">
               <p> I'm a driven and enthusiastic web developer with a passion for creating intuitive and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I am eager to continue honing my skills and learning new technologies. I am confident that my attention to detail, problem-solving skills, and determination will make me a valuable asset to any team.</p>
+            </div>
+            <div class="about-img">
+              <img src="/images/about-me.png" alt="Profile picture">
             </div>
           </section>
           <section class="projects" id="projects">
             <h3> Projects I've been working on</h3>
             <div class="projects-indiv">
+              <div class="hg-img">
+                <img src="/images/hg.png" alt="Website image">
+              </div>
               <h4>Homewares Galore</h4>
               <p>This was my final projects for a General Assembly Fron-end development course</p>
+              <p>I built this site using a desktop first responsive approach</p>
               <div class=projects-button-div>
                 <div class="projects-button" id="hg-live">Live site</div>
                 <div class="projects-button" id="hg-code">See Code</div>
@@ -63,6 +67,7 @@
             <div class="projects-indiv">
               <h4>Portfolio</h4>
               <p>My Portfolio site was built using HTML, CSS and javascript using a mobile first responsive design</p>
+              <p>I built this site using a mobile first responsive approach</p>
               <div class=projects-button-div>
                 <div class="projects-button" id="port-live" >Live site</div>
                 <div class="projects-button" id="port-code">See Code</div>
@@ -70,7 +75,15 @@
             </div>
           </section>
           <section class="contact" id="contact">
-            <h3> Contact form</h3>
+            <div class="contact-form"> 
+              <h3> Contact form</h3>
+              <form name="contact" method="POST" data-netlify="true">
+                  <input type="text" name="name" placeholder="Your name" autofocus/>       
+                  <input type="email" name="email" placeholder="Your email"/>
+                  <textarea name="message" placeholder="Your message"></textarea>
+                  <button type="submit">Send</button>
+              </form>
+            </div>
           </section>
         </main>
         <footer>

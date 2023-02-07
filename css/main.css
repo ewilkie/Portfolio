@@ -219,7 +219,6 @@ section {
 
     display: flex;
     flex-direction: column;
-
     justify-content: center;
 
     
@@ -334,21 +333,86 @@ section {
 }
 
 
-/*
-.about {
-    /* min-height: calc(100vh - 70px); 
-    min-height: 100vh
-    
-}
+.hg-img img {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+   
+  }
 
-.projects {
-    min-height: 100vh
-}
+/****************/ 
+/* Contact form */
+/****************/
 
 .contact {
-    min-height: 100vh
+    border: 2px solid black;
 }
-*/
+
+.contact-form {
+    border: 2px solid purple;
+    background-color: darkslategray;
+    
+    padding: 50px;
+
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px !important;
+
+    border: 2px solid red;
+}
+
+
+
+form button {
+    background-color: aqua;
+    border-radius: 10px;
+
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+    padding: 10px 20px;
+}
+
+textarea {
+    height: 100px;
+
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background: pink;
+  border: 2px solid black;
+  outline: none;
+  box-shadow: 0 0 6px grey;
+}
+
+
+
+/**********/ 
+/* Footer */
+/**********/
+
 
 footer {
     width: 100%;
