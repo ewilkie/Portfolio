@@ -48,6 +48,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Event clicks for redirects
+
 // add event click for resume 
 
 
@@ -59,3 +61,18 @@ document.querySelector('#linkedin').addEventListener("click", function() {
     window.open("https://www.linkedin.com/in/emilie-wilkie/", "_blank");
 });
 
+document.querySelector('#hg-live').addEventListener("click", function() {
+    window.open("https://ewilkie.github.io/GA-Final-Project/", "_blank");
+});
+
+document.querySelector('#hg-code').addEventListener("click", function() {
+    window.open("https://github.com/ewilkie/GA-Final-Project", "_blank");
+});
+
+document.querySelector('#port-live').addEventListener("click", function() {
+    window.open("https://ewilkie.github.io/Portfolio/", "_blank");
+});
+
+document.querySelector('#port-code').addEventListener("click", function() {
+    window.open("https://github.com/ewilkie/Portfolio", "_blank");
+});
