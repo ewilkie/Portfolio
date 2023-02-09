@@ -361,26 +361,41 @@ section {
 
 .projects-indiv {
     border: 2px solid black;
+    border-radius: 10px;
     margin-bottom: 20px;
+    background-color: lightgray;
 }
+
+.project-indiv-text {
+
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #012A4A;
+}
+
+
 
 .projects-button-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;;
     
 }
 
 .projects-button {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #61A5C2;
     padding: 10px 20px;
     border-radius: 5px;
+    
+
 }
 
 .projects-button:hover {
-    background-color: red;
+    background-color: #013A63;
+    color: lightgray;
 }
 
 .projects-button:first-child{
@@ -392,7 +407,7 @@ section {
     max-width: 100%; 
     display: block; 
     height: auto;
-   
+    border-radius: 10px;
   }
 
 /****************/ 
