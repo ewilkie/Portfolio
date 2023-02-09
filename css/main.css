@@ -255,16 +255,21 @@ section {
 
 .resume {
     cursor: pointer;
-    background-color: lightgray;
     padding: 10px 20px;
     border-radius: 5px;
+    color: #013A63;
+    background: linear-gradient(to bottom, #A9D6E5, lightgray);
+
+
+
 }
 
 .fab {
-    color: lightgray;
+    color: linear-gradient(to bottom, #A9D6E5, lightgray);
     font-size: 40px;
     margin-left: 10px; 
     cursor: pointer;
+    
   }
 
 
@@ -293,6 +298,7 @@ section {
 
   .about-img{
     z-index: 50;
+
   }
 
 .about-hs-outer {
@@ -309,12 +315,10 @@ section {
     max-width: 100%; 
     display: block; 
     height: auto;
-    border-radius: 10px;   
+    border-radius: 10px;       
+}
 
-    
-  }
-
-  .about-box {
+.about-box {
     
     border: 4px solid #61A5C2;  
     border-radius: 10px;
@@ -328,14 +332,25 @@ section {
     z-index: 40;
 }
 
-  
 .about-text {
     border: 2px solid green;
-    margin: 30px;
+    margin-bottom: 20px;
 }
 
-.about-text p {
+  
+.about-text-indiv {
+    background-color: #61A5C2;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+
+
+.about-text-indiv p {
     font-size: 20px;
+    color: lightgray;
+    padding: 20px 20px;
+    
 }
 
 
