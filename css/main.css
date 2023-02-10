@@ -24,8 +24,8 @@ h3 {
     color: lightgrey;
 }
 
-header {
-    width: 100%;
+.header {
+
     height: 70px;
     background-color: #012A4A;
     
@@ -42,13 +42,15 @@ header {
     left: 0;
     right: 0;
     
-    transition: all 0.3s ease;
+    transition: top 0.3s;
 }
 
-header.show {
-    transform: translateY(-100%);
+.header--hidden {
 
-}
+    top: -70px;
+    border: 2px solid yellow;
+    background-color: yellow;
+  }
 
 .menu-container {   
     display: flex;

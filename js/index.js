@@ -49,15 +49,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 /* need to add css show property to get this to work */
-let header = document.querySelector("header");
+let header = document.querySelector(".header");
+let lastScroll = 0;
 
 window.addEventListener("scroll", function() {
-  const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
-  if (scrollPosition >= 100) {
-    header.classList.add("show");
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    header.classList.add("header--hidden");
+  } else if (currentScroll > lastScroll && currentScroll > 60) {
+    header.classList.remove("header--hidden");
   } else {
-    header.classList.remove("show");
+    header.classList.add("header--hidden");
   }
+
+  lastScroll = currentScroll;
 });
 
 // Event clicks for redirects
