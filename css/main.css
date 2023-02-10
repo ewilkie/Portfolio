@@ -438,7 +438,10 @@ section {
         margin-right: 10px;
     }
 
-
+    .projects{
+        max-width: 800px;
+        margin: 0 auto;
+    }
   }
 
 
@@ -447,9 +450,8 @@ section {
 /* Contact form */
 /****************/
 
-.contact {
-    border: 2px solid black;
-}
+
+
 
 .contact-form {
     /* border: 2px solid purple; */
@@ -514,6 +516,14 @@ input[type="email"]:focus {
 input:focus::placeholder,
 textarea:focus::placeholder  {
     color: white;
+}
+
+@media (min-width: 600px) {
+    .contact {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
 }
 
 
