@@ -363,7 +363,6 @@ section {
  .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid yellow;
     height: 600px;
  }
 
