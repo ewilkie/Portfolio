@@ -375,10 +375,6 @@ section {
 
 /* projects */
 
-.projects {
-    border: 2px solid red;
-}
-
 
 .projects-indiv {
     border: 2px solid black;
@@ -441,6 +437,8 @@ section {
     .projects-indiv:first-child {
         margin-right: 10px;
     }
+
+
   }
 
 
