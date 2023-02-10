@@ -375,6 +375,11 @@ section {
 
 /* projects */
 
+.projects {
+    border: 2px solid red;
+}
+
+
 .projects-indiv {
     border: 2px solid black;
     border-radius: 10px;
@@ -419,12 +424,26 @@ section {
 }
 
 
-.hg-img img {
+.pimg img {
     max-width: 100%; 
     display: block; 
     height: auto;
     border-radius: 10px;
   }
+
+
+  @media (min-width: 800px) {
+    .projects-outer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects-indiv:first-child {
+        margin-right: 10px;
+    }
+  }
+
+
 
 /****************/ 
 /* Contact form */
