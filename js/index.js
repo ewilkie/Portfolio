@@ -37,7 +37,7 @@ let menuLinks = document.querySelectorAll('.menu-link');
     
 }
 
-
+/* page links go to different sections */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -48,8 +48,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/* need to add css show property to get this to work 
-const header = document.querySelector("header");
+/* need to add css show property to get this to work */
+let header = document.querySelector("header");
 
 window.addEventListener("scroll", function() {
   const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
@@ -59,7 +59,6 @@ window.addEventListener("scroll", function() {
     header.classList.remove("show");
   }
 });
-*/
 
 // Event clicks for redirects
 
