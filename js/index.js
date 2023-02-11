@@ -53,14 +53,15 @@ let header = document.querySelector(".header");
 let lastScroll = 0;
 
 window.addEventListener("scroll", function() {
+
   const currentScroll = window.pageYOffset;
 
   if (currentScroll <= 0) {
-    header.classList.add("header--hidden");
+    header.classList.remove("header-hidden");
   } else if (currentScroll > lastScroll && currentScroll > 60) {
-    header.classList.remove("header--hidden");
+    header.classList.add("header-hidden");
   } else {
-    header.classList.add("header--hidden");
+    header.classList.remove("header-hidden");
   }
 
   lastScroll = currentScroll;
