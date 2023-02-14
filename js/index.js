@@ -48,13 +48,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/* need to add css show property to get this to work */
+/* header shows on scroll up and hides on scroll down */
 let header = document.querySelector(".header");
 let lastScroll = 0;
 
-window.addEventListener("scroll", function() {
+document.body.addEventListener("scroll", function() {
 
-  const currentScroll = window.pageYOffset;
+  const currentScroll = document.body.scrollTop;
 
   if (currentScroll <= 0) {
     header.classList.remove("header-hidden");

@@ -42,14 +42,13 @@ h3 {
     left: 0;
     right: 0;
     
-    transition: top 0.3s;
+    transition: top 0.3s ease-in-out;
 }
 
 .header-hidden {
 
-    top: -70px;
-    border: 2px solid yellow;
-    background-color: yellow;
+    top: -100%;
+
   }
 
 .menu-container {   
