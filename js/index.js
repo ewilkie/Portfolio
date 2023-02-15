@@ -70,7 +70,9 @@ document.body.addEventListener("scroll", function() {
 // Event clicks for redirects
 
 // add event click for resume 
-
+document.querySelector('#resume').addEventListener("click", function() {
+    window.open("https://emilie-wilkie.com/resume.pdf", "_blank");
+});
 
 document.querySelector('#github').addEventListener("click", function() {
     window.open("https://github.com/ewilkie", "_blank");
