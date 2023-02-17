@@ -22,16 +22,17 @@ menuLinks.forEach(anchor => {
         if (window.innerWidth <= 600) {
             toggleMenuBtn.classList.toggle('open');
             menu.classList.toggle('open'); 
-        // for bigger than mobile     
-        } else {
-            event.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            console.log(anchor.getAttribute('href'));
-        } 
+        }
+
+        // scroll to different section, need this for all screen sizes 
+        event.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        console.log(anchor.getAttribute('href'));
+        
     });
 });
 
-/* page links go to different sections 
+/* scroll to different section, need this for all screen sizes 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
