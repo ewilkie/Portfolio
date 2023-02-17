@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-    font-size: 7vh;
+    font-size: 8vh;
     color:#61A5C2;
     margin: 0;
 }
@@ -146,6 +146,14 @@ nav a:hover {
 /* Main content */
 /***************/ 
 
+.main-container {
+    background-image: url("/images/Wallpaper4.png");
+    /*background-size: cover; */
+    background-repeat: no-repeat; 
+    background-position: top; 
+    margin-top: 70px;
+}
+
 section {
     /* height: 100vh; /* Make the section height equal to the full viewport height */
     min-height: 100vh;
@@ -161,6 +169,8 @@ section {
     /* for the box shadow of the header to be visible */
     position: relative;
     z-index: 90;
+
+
 }
 
 .main-hero {
@@ -170,6 +180,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;      
+    
 }
 
 .main-hero-icons {
