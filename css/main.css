@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden; /* prevent scroll in mobile site */
 }
 
@@ -16,6 +16,7 @@ h2 {
     font-size: 8vh;
     color:#61A5C2;
     margin: 0;
+
 }
 
 h3 {
@@ -322,6 +323,7 @@ section {
 
 .contact-form h3 {
     text-align: center;
+    color:#012A4A;
 }
 
 form {
