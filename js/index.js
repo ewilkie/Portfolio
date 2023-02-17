@@ -11,7 +11,7 @@ function toggleMenu(e) {
 toggleMenuBtn.addEventListener('click', toggleMenu);
 
 
-// mobile menu functionality for navigating to different sections 
+// open mobile menu and enable scroll to sections for all screen sizes 
 let menuLinks = document.querySelectorAll('.menu-link');
 
 menuLinks.forEach(anchor => { 
@@ -60,7 +60,6 @@ document.body.addEventListener("scroll", function() {
 
   lastScroll = currentScroll;
 });
-
 
 // Event clicks for redirects
 document.querySelector('#resume').addEventListener("click", function() {
