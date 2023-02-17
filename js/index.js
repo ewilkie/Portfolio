@@ -11,44 +11,37 @@ function toggleMenu(e) {
 toggleMenuBtn.addEventListener('click', toggleMenu);
 
 
-
 // mobile menu functionality for navigating to different sections 
 let menuLinks = document.querySelectorAll('.menu-link');
 
-
-    for (let i = 0; i < menuLinks.length; i++) {
+menuLinks.forEach(anchor => { 
         
-         menuLinks[i].addEventListener('click', function(event) {
+    anchor.addEventListener('click', function(event) {
         
-            if (window.innerWidth <= 600) {
-        // delay only applies to mobile menu
-        
-            /*
-            event.preventDefault();
-            setTimeout(function() {
-            window.location.href = menuLinks[i].getAttribute("href");
-            }, 500);
-            */
+        // only for mobile    
+        if (window.innerWidth <= 600) {
             toggleMenuBtn.classList.toggle('open');
             menu.classList.toggle('open'); 
-        }
-
-        });
-    
-}
-
-/* page links go to different sections */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-        });
+        // for bigger than mobile     
+        } else {
+            event.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            console.log(anchor.getAttribute('href'));
+        } 
     });
 });
 
-/* header shows on scroll up and hides on scroll down */
+/* page links go to different sections 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        console.log(this.getAttribute('href'));
+    });
+});
+*/
+
+// header shows on scroll up and hides on scroll down 
 let header = document.querySelector(".header");
 let lastScroll = 0;
 
@@ -67,9 +60,8 @@ document.body.addEventListener("scroll", function() {
   lastScroll = currentScroll;
 });
 
-// Event clicks for redirects
 
-// add event click for resume 
+// Event clicks for redirects
 document.querySelector('#resume').addEventListener("click", function() {
     window.open("https://emilie-wilkie.com/resume.pdf", "_blank");
 });
