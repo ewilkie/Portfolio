@@ -378,11 +378,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #012A4A;  
-    color: lightgray;  
-    box-shadow: 0px -15px 20px 0px rgba(0,0,0,0.75);
-    z-index: 110;
-    position: relative;
+    color: #012A4A;  
+    /*box-shadow: 0px -15px 20px 0px rgba(0,0,0,0.75);
+    z-index: 110; 
+    position: relative; */
+    background: linear-gradient(to bottom, #A9D6E5, lightgray);
 }
 
 /**************/
