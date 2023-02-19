@@ -25,9 +25,10 @@ h3 {
 }
 
 .header {
-    /* to have header box shadow displayed above main */ 
-    box-shadow: 0px 15px 30px 0px rgba(0,0,0, 0.75);
-    background-color: #012A4A; 
+    /* to have header box shadow displayed above main 
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0, 0.75);   
+    background-color: #012A4A; */ 
+    background: linear-gradient(to top, #A9D6E5, lightgray);
     height: 70px; 
     display: flex;
     justify-content: right;
@@ -78,7 +79,7 @@ h3 {
     display: block;
     width: 35px;
     height: 4px;
-    background-color: #A9D6E5;
+    background-color: #012A4A;
     border-radius: 2px;
     margin-bottom: 7px;
     transition: transform 0.2s;
@@ -133,12 +134,12 @@ nav li {
 nav a {
     color: #012A4A;
     text-decoration: none;
-    font-size: 56px;
+    font-size: 48px;
 }
 
 nav a:hover {
-    color: #61A5C2;
-    border-bottom: 2px solid #61A5C2;
+    color: lightgrey;
+    border-bottom: 3px solid lightgrey;
 }
 
 
@@ -152,7 +153,12 @@ nav a:hover {
     /*background-size: cover; */
     background-repeat: no-repeat; 
     background-position: top; 
-    margin-top: 70px;
+
+
+    background-color: #013A63;
+    /* for the box shadow of the header to be visible */
+    position: relative;
+    z-index: 90;
 }
 
 section {
@@ -163,15 +169,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.main-container {
-    background-color: #013A63;
-    /* for the box shadow of the header to be visible */
-    position: relative;
-    z-index: 90;
-
-
 }
 
 .main-hero {
@@ -195,11 +192,10 @@ section {
     padding: 10px 20px;
     border-radius: 5px;
     color: #013A63;
-    background: linear-gradient(to bottom, #A9D6E5, lightgray);
+    background: linear-gradient(to top, #A9D6E5, lightgray);
 }
 
 .fab {
-    color: linear-gradient(to bottom, #A9D6E5, lightgray);
     font-size: 40px;
     margin-left: 10px; 
     cursor: pointer; 
@@ -277,7 +273,8 @@ section {
 /************/
 
 .projects-indiv {
-    border: 2px solid black;
+    border: 3px solid black;
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: lightgray;
@@ -326,6 +323,8 @@ section {
 
 .contact-form {
     background-color: #61A5C2;
+    border: 3px solid black;
+    box-shadow: 0 0 10px black;
     padding: 50px;
     border-radius: 10px;
 }
@@ -350,7 +349,7 @@ textarea {
 }
 
 form button {
-    background-color: #012A4A;
+    background-color: #2A6F97;
     color: white;
     border-radius: 10px;
     width: auto;
@@ -430,10 +429,11 @@ footer {
     }
 
     nav a {
-        font-size: 32px;
-        color: #89C2D9;
+        font-size: 28px;
+        /*color: #89C2D9; */
     }
 
+    /*
     nav a:hover {
         border-bottom: 2px solid #A9D6E5;
         color: #A9D6E5;
@@ -442,12 +442,17 @@ footer {
     nav a:active {
         border-bottom: 2px solid #A9D6E5;
         color: #A9D6E5;
-    }
+    }*/
     
 }
 
 /* for small tablets and larger */
 @media (min-width: 800px) {
+
+    .menu-container {
+        max-width: 800px;
+    }
+
     .main-hero {
         max-width: 800px;
         margin: 0 auto;
