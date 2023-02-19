@@ -27,7 +27,6 @@ menuLinks.forEach(anchor => {
         // scroll to different section, need this for all screen sizes 
         event.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-        console.log(anchor.getAttribute('href'));
         
     });
 });

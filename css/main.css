@@ -159,11 +159,12 @@ nav a:hover {
     /* for the box shadow of the header to be visible */
     position: relative;
     z-index: 90;
+
 }
 
 section {
-    /* height: 100vh; /* Make the section height equal to the full viewport height */
-    min-height: 100vh;
+    /* height: 100vh;  Make the section height equal to the full viewport height */
+    min-height: 100vh; 
     margin: 0 50px;
 
     display: flex;
@@ -172,13 +173,10 @@ section {
 }
 
 .main-hero {
-    /* minus header height */
-    min-height: calc(100vh - 70px);
-    height: calc(100vh - 70px);
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;      
-    
 }
 
 .main-hero-icons {
@@ -204,8 +202,6 @@ section {
 /*********/
 /* about */
 /*********/
-
-
 
 .about-grid {
     display: grid;
@@ -265,8 +261,6 @@ section {
     right: -30px;
     z-index: 40;
 }
-
-
 
 /************/
 /* projects */
@@ -449,27 +443,31 @@ footer {
 /* for small tablets and larger */
 @media (min-width: 800px) {
 
+    /*
     .menu-container {
         max-width: 800px;
+    } */
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .main-hero {
+    section {
+        min-height: unset;
         max-width: 800px;
-        margin: 0 auto;
     }
 
-    .about {
-        max-width: 800px;
-        margin: 0 auto;
-    }
 
     .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     .about-hs-outer {
-        top: 150px;
+        top: 40%;  
     }
 
     .projects-outer {
@@ -481,13 +479,14 @@ footer {
         margin-right: 10px;
     }
 
-    .projects{
-        max-width: 800px;
-        margin: 0 auto;
+    /* use padding for href js scroll, margin gets ignored */
+    .projects {
+        padding: 150px 0; 
     }
 
     .contact {
-        max-width: 800px;
-        margin: 0 auto;
+        width: 800px;
+        margin-bottom: 200px;
     }
+
 }
