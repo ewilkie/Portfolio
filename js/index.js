@@ -88,3 +88,11 @@ document.querySelector('#port-live').addEventListener("click", function() {
 document.querySelector('#port-code').addEventListener("click", function() {
     window.open("https://github.com/ewilkie/Portfolio", "_blank");
 });
+
+document.querySelector('#ttt-live').addEventListener("click", function() {
+    window.open("https://ewilkie.github.io/Tic-Tac-Toe/", "_blank");
+});
+
+document.querySelector('#ttt-code').addEventListener("click", function() {
+    window.open("https://github.com/ewilkie/Tic-Tac-Toe", "_blank");
+});
