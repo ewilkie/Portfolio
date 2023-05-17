@@ -33,23 +33,6 @@ h3 {
     color: lightgrey;
 }
 
-.header {
-    background: linear-gradient(to top, #A9D6E5, lightgray);
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 900;
-    transition: top 0.3s ease-in-out;
-}
-
-/* for js functionality on scroll */
-.header-hidden {
-    top: -100%;
-}
 
 .menu-container {   
     display: flex;
