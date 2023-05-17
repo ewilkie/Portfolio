@@ -164,6 +164,11 @@ section {
 /* projects */
 /************/
 
+.projects-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .projects-indiv {
     border: 3px solid black;
     box-shadow: 0 0 10px black;
