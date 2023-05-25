@@ -50,7 +50,7 @@ h3 {
 
 .main-container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 60% 40%;
     grid-gap: 5px;
 
     flex:1; /* to position footer at bottom of page */
@@ -139,18 +139,42 @@ section {
 }
 */
 
-
+/*
 .main-hero {
-    /*height: 100vh; */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;      
 }
+*/
 
+
+/*********/
+/* about */
+/*********/
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid red;
+}
+
+/* resume, github, linkedin icons */
 .main-hero-icons {
     display: flex;
     flex-direction: row;
+    max-width: fit-content;
     align-items: center; 
+    width: auto;
+    border: 1px solid yellow;
 }
 
 .resume {
@@ -169,13 +193,6 @@ section {
     color: white;
 }
 
-/*********/
-/* about */
-/*********/
-
-.about {
-    border: 1px solid red;
-}
 
 /* head shot */
 .about-hs-outer {
