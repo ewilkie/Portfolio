@@ -18,18 +18,18 @@ body {
 }
 
 h1 {
-    font-size: 25px !important;
+    font-size: 1.5625rem;
     color: #d3d3d3;
 }
 
 h2 {
-    font-size: 8vh;
+    font-size: 1.3125rem;
     color:#61A5C2;
     margin: 0;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: lightgrey;
 }
 
@@ -55,6 +55,68 @@ h3 {
     background-repeat: no-repeat; 
     background-position: top; 
     background-color: #013A63;
+}
+
+
+
+/************/
+/* projects */
+/************/
+
+.projects-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.projects-indiv {
+    border: 3px solid black;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+.project-indiv-text {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #012A4A;
+    height: 150px;
+
+}
+
+.projects-button-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.projects-button {
+    cursor: pointer;
+    background-color: #61A5C2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.projects-button:hover {
+    background-color: #013A63;
+    color: lightgray;
+}
+
+.projects-button:first-child{
+    margin-right: 10px;
+}
+
+.pimg img {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
@@ -160,64 +222,6 @@ section {
     z-index: 40;
 }
 
-/************/
-/* projects */
-/************/
-
-.projects-outer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.projects-indiv {
-    border: 3px solid black;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    background-color: lightgray;
-}
-
-.project-indiv-text {
-    padding: 0 20px;
-    margin-bottom: 20px;
-    color: #012A4A;
-    height: 150px;
-
-}
-
-.projects-button-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-
-}
-
-.projects-button {
-    cursor: pointer;
-    background-color: #61A5C2;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-
-.projects-button:hover {
-    background-color: #013A63;
-    color: lightgray;
-}
-
-.projects-button:first-child{
-    margin-right: 10px;
-}
-
-.pimg img {
-    max-width: 100%; 
-    display: block; 
-    height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
 
 
 /**********/ 
