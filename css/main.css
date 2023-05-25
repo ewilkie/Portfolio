@@ -192,10 +192,10 @@ section {
     border-radius: 10px;
     z-index: 40;
     position: absolute;
-    top: 20px;
-    bottom: -35px;
-    left: 20px;
-    right: -30px;
+    top: 1.25rem;
+    bottom: -2.1875rem;
+    left: 1.25rem;
+    right: -1.875rem;
 
 }
 
