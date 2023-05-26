@@ -156,17 +156,15 @@ section {
 .about {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 40px;
-    border: 1px solid cyan;
-
 }
 
 .about-top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    border: 1px solid red;
+    gap: 30px;
 }
 
 /* head shot */
@@ -191,7 +189,6 @@ section {
 /* for blue border */
 .about-img{
     z-index: 50;
-    border: 1px solid pink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,23 +212,24 @@ section {
     flex-direction: row;
     max-width: fit-content;
     align-items: center; 
-    border: 1px solid yellow;
 }
 
 .resume {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #013A63;
-    background: linear-gradient(to top, #A9D6E5, lightgray);
-    border: 3px solid black;
+    background: /*linear-gradient(to top, #A9D6E5, lightgray); */ #61A5C2;
+    /*border: 3px solid black; */
 }
 
 .fab {
     font-size: 2.5rem;
     margin-left: 10px; 
     cursor: pointer; 
-    color: white;
+    color: #61A5C2;
 }
 
 
