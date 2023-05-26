@@ -96,3 +96,11 @@ document.querySelector('#ttt-live').addEventListener("click", function() {
 document.querySelector('#ttt-code').addEventListener("click", function() {
     window.open("https://github.com/ewilkie/Tic-Tac-Toe", "_blank");
 });
+
+document.querySelector('#tbg-live').addEventListener("click", function() {
+    window.open("https://ewilkie.github.io/TheBurgerCompany/", "_blank");
+});
+
+document.querySelector('#tbg-code').addEventListener("click", function() {
+    window.open("https://github.com/ewilkie/TheBurgerCompany", "_blank");
+});
