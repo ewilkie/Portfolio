@@ -164,18 +164,15 @@ section {
 .about-top {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
     border: 1px solid red;
 }
 
 /* head shot */
 .about-hs-outer {
     display: flex; /* need this otherwise z-index doesn't work */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    position: relative; /* for box positioning */
     width: 15rem;
     height: 15rem;
     box-shadow: 0 0 10px black;
@@ -194,6 +191,10 @@ section {
 /* for blue border */
 .about-img{
     z-index: 50;
+    border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-box {  
