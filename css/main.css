@@ -37,6 +37,8 @@ body {
 h1 {
     font-size: 1.5625rem;
     color: #d3d3d3;
+    margin: 0 !important;
+    padding: 0;
 }
 
 h2 {
@@ -59,17 +61,15 @@ h3 {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 5px;
-
+    background-color: #d3d3d3;
     flex:1; /* to position footer at bottom of page */
 }
 
 .main-left {
-    background-color: white;
+    /*background-color: #d3d3d3; */
 }
 
-.main-right {
-    background-color: #013A63;
-}
+
 
 
 
@@ -160,6 +160,10 @@ section {
 /* about */
 /*********/
 
+.main-right {
+    background-color: #013A63;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -171,7 +175,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 30px; /* space between hs and icons */
+    margin-bottom: 50px; /* move h1 lower */
 }
 
 /* head shot */
