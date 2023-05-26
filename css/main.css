@@ -156,6 +156,9 @@ section {
 .about {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    border: 1px solid cyan;
+
 }
 
 .about-top {
@@ -166,33 +169,6 @@ section {
     gap: 40px;
     border: 1px solid red;
 }
-
-/* resume, github, linkedin icons */
-.main-hero-icons {
-    display: flex;
-    flex-direction: row;
-    max-width: fit-content;
-    align-items: center; 
-    width: auto;
-    border: 1px solid yellow;
-}
-
-.resume {
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #013A63;
-    background: linear-gradient(to top, #A9D6E5, lightgray);
-    border: 3px solid black;
-}
-
-.fab {
-    font-size: 2.5rem;
-    margin-left: 10px; 
-    cursor: pointer; 
-    color: white;
-}
-
 
 /* head shot */
 .about-hs-outer {
@@ -223,12 +199,38 @@ section {
     border-radius: 10px;
     z-index: 40;
     position: absolute;
-    top: 1.25rem;
-    bottom: -2.1875rem;
+    top: -1.25rem;
+    bottom: 2.1875rem;
     left: 1.25rem;
     right: -1.875rem;
 
 }
+
+/* resume, github, linkedin icons */
+.about-icons {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    align-items: center; 
+    border: 1px solid yellow;
+}
+
+.resume {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #013A63;
+    background: linear-gradient(to top, #A9D6E5, lightgray);
+    border: 3px solid black;
+}
+
+.fab {
+    font-size: 2.5rem;
+    margin-left: 10px; 
+    cursor: pointer; 
+    color: white;
+}
+
 
 .about-text-indiv {
     background-color: #61A5C2;
