@@ -1,4 +1,11 @@
-/* remove white space at top of page */
+/* colours 
+grey #d3d3d3
+lightblue #A9D6E5
+greyblue #61A5C2
+dark blue #013A63
+darker blue #012A4A
+*/
+
 
 /**********************/
 /* main html elements */
@@ -15,12 +22,12 @@ body {
     margin: 0;
     padding: 0;
 
-
+    /*
     background-image: url("/images/Wallpaper4.png");
-    /*background-size: cover; */
+    background-size: cover;
     background-repeat: no-repeat; 
     background-position: top; 
-
+    */
     /* to position footer at bottom of page */
     display:flex;
     flex-direction:column;
@@ -40,7 +47,7 @@ h2 {
 
 h3 {
     font-size: 1.875rem;
-    color: lightgrey;
+    color: #A9D6E5;
 }
 
 
@@ -232,19 +239,18 @@ section {
     color: #61A5C2;
 }
 
-
 .about-text-indiv {
     background-color: #61A5C2;
     border-radius: 10px;
-    margin: 20px 0px;
-    padding: 20px 40px;
+    margin: 20px;
+    padding: 10px 30px;
     border: 3px solid black;
     box-shadow: 0 0 10px black;
 }
 
 .about-text-indiv p {
-    font-size: 18px;
-    color: lightgray;
+    font-size: 1.125rem;
+    color: #012A4A;
     line-height: 1.8;
 
 }
