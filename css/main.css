@@ -82,8 +82,7 @@ h3 {
 /************/
 
 .projects {
-    border: 1px solid red;
-    margin: 20px;
+    margin: 30px;
 }
 
 .projects-outer {
@@ -102,10 +101,9 @@ h3 {
 
 .project-indiv-text {
     padding: 0 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #012A4A;
-    height: 150px;
-
+    height: 9.375rem;
 }
 
 .projects-button-div {
@@ -114,7 +112,6 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-
 }
 
 .projects-button {
@@ -130,6 +127,7 @@ h3 {
     color: #d3d3d3;
 }
 
+/* for spacing between buttons */
 .projects-button:first-child{
     margin-right: 10px;
 }
