@@ -164,15 +164,17 @@ section {
 .about-top {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 30px;
     border: 1px solid red;
 }
 
 /* head shot */
 .about-hs-outer {
     display: flex; /* need this otherwise z-index doesn't work */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 15rem;
     height: 15rem;
@@ -200,9 +202,9 @@ section {
     z-index: 40;
     position: absolute;
     top: -1.25rem;
-    bottom: 2.1875rem;
+    bottom: 1.25rem;
     left: 1.25rem;
-    right: -1.875rem;
+    right: -1.25rem;
 
 }
 
