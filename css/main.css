@@ -42,9 +42,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3125rem;
+    font-size: 1.5625rem;
     color:#61A5C2;
-    margin: 0;
+    font-weight: 700;
 }
 
 h3 {
@@ -173,10 +173,11 @@ section {
 
 .about-top {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    justify-content: center;
     align-items: center;
     gap: 30px; /* space between hs and icons */
-    margin-bottom: 50px; /* move h1 lower */
+    /* margin-bottom: 50px;  move h1 lower */
 }
 
 /* head shot */
@@ -244,10 +245,14 @@ section {
     color: #61A5C2;
 }
 
+.about-bottom {
+    margin: 50px 20px 0px 20px;
+}
+
 .about-text-indiv {
     background-color: #61A5C2;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px 0px;
     padding: 10px 30px;
     border: 3px solid black;
     box-shadow: 0 0 10px black;
