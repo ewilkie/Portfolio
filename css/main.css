@@ -45,15 +45,20 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 900;
-    color:#013A63;
+    color:#61A5C2;
     font-weight: 700;
 }
 
 h3 {
     font-size: 1.5rem;
-    color: #012A4A;
+    color: #013A63;
     padding: 20px 0 0 0;
     margin:0;
+}
+
+p {
+    color: #013A63;
+    font-size: 1rem;
 }
 
 
@@ -65,12 +70,12 @@ h3 {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 5px;
-    background-color: #d3d3d3;
+    background-color: #ececec;
     flex:1; /* to position footer at bottom of page */
 }
 
 .main-left {
-    background-color: #d3d3d3; 
+    background-color: #ececec; 
 }
 
 
