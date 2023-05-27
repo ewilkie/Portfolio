@@ -61,7 +61,7 @@ body {
     */
     /* to position footer at bottom of page */
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
     min-height: calc(100vh - 1rem); /* minus size of footer */
 }
 
@@ -181,6 +181,7 @@ body {
 .about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
@@ -245,15 +246,16 @@ body {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 700;
     color: #013A63;
     background: /*linear-gradient(to top, #A9D6E5, #d3d3d3); */ #61A5C2;
+    border: none;
     /*border: 3px solid black; */
 }
 
 .fab {
-    font-size: 2rem;
+    font-size: 2em;
     margin-left: 10px; 
     cursor: pointer; 
     color: #61A5C2;
@@ -261,6 +263,7 @@ body {
 
 .about-bottom {
     margin: 50px 20px 0px 20px;
+    border: 1px solid red;
 }
 
 .about-text-indiv {
