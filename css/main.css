@@ -76,11 +76,23 @@ p {
 
 .main-container {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 1fr;
     grid-gap: 5px;
     background-color: #ececec;
     flex:1; /* to position footer at bottom of page */
 }
+
+
+/* this is for larger size 
+.main-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 5px;
+    background-color: #ececec;
+    flex:1; /* to position footer at bottom of page 
+}
+*/
+
 
 .main-left {
     background-color: #ececec; 
@@ -102,9 +114,18 @@ p {
 
 .projects-outer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
 }
+
+/*
+.projects-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap; 
+    gap: 30px;
+}
+*/
 
 .projects-indiv {
     border: 3px solid black;
@@ -118,7 +139,7 @@ p {
     padding: 0 20px;
     margin-bottom: 30px;
     color: #012A4A;
-    height: 9.375rem;
+    height: 9.375em;
 }
 
 .projects-button-div {
@@ -135,6 +156,7 @@ p {
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid black;
+    font-size: 0.8em;
 }
 
 .projects-button:hover {
@@ -255,9 +277,9 @@ p {
 }
 
 .about-text-indiv p {
-    font-size: 1.125rem;
+    /*font-size: 1.125rem; */
     color: #012A4A;
-    line-height: 1.8;
+    line-height: 1.5; 
 
 }
 
