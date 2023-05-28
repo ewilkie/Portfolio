@@ -304,12 +304,14 @@ footer {
 /**************/
 
 
-/* display menu items in header for anything bigger than mobile 
-@media (min-width: 600px) {
-
+/* small devices - tablets */
+@media (min-width: 48.0625rem) and (max-width: 62rem) {
+    .projects-outer {
+        grid-template-columns: 1fr 1fr;
+    }
    
 }
-*/
+
 
 /* for small tablets and larger
 @media (min-width: 800px) {
