@@ -303,13 +303,37 @@ footer {
 /* Responsive */
 /**************/
 
+/* use rem for accessibility purposes if default font is increased from 16px
 
-/* small devices - tablets */
+/* Medium Devices (Laptops and small desktop screens): 769px -922px */
 @media (min-width: 48.0625rem) and (max-width: 62rem) {
     .projects-outer {
         grid-template-columns: 1fr 1fr;
     }
    
+}
+
+/* Medium Devices (Laptops and small desktop screens): 769px -922px */
+@media (min-width: 62.0625rem) and (max-width: 75rem) {
+    .projects-outer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-container {
+        grid-template-columns: 60% 40%;
+        grid-auto-flow: column;
+    }
+
+    .main-right {
+        justify-self: end; /* Align the right section to the end (right) */
+        order: 2; 
+      }
+      
+      .main-left {
+        justify-self: start; /* Align the left section to the start (left) */
+        order: 1; 
+      }
+
 }
 
 
