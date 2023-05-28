@@ -69,6 +69,8 @@ body {
     display:flex;
     flex-direction: column;
     min-height: calc(100vh - 1rem); /* minus size of footer */
+
+    background-color: #013A63;
 }
 
 
@@ -353,6 +355,10 @@ footer {
     }
 
     .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+
         grid-template-columns: 60% 40%;
         grid-auto-flow: column;
     }
@@ -365,6 +371,10 @@ footer {
       .main-left {
         justify-self: start; /* Align the left section to the start (left) */
         order: 1; 
+      }
+
+      .body {
+        background-color: #012A4A;
       }
 
 }
