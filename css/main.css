@@ -224,7 +224,6 @@ body {
     bottom: 1.25rem;
     left: 1.25rem;
     right: -1.25rem;
-
 }
 
 /* resume, github, linkedin icons */
@@ -269,7 +268,7 @@ body {
 
 .about-text-indiv p {
     /*font-size: 1.125rem; */
-    color: #012A4A;
+    color:       #012A4A;
     line-height: 1.5; 
 
 }
